@@ -1,0 +1,38 @@
+//A SEGUIR INCLUIMOS AS BIBLIOTECAS NECESSARIAS PARA NOSSO PROGRAMA RODAR
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+
+
+
+
+namespace PrimeiroProjeto //ESTRUTURA BÁSICA DE UM PROGRAMA EM C#
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string nome; //DEFINIÇÃO DE UMA VARIAVEL QUE RECEBE "PALAVRAS"
+            int idade;   //DEFINIÇÃO DE UMA VARIAVEL QUE RECEBE NUMEROS INTEIROS
+
+
+            Console.WriteLine("Digite seu nome."); //ESTE COMANDO IMPRIMI UMA MENSAGEM NA TELA
+                  nome = Console.ReadLine();  // COMANDO QUE CAPTURA O QUE FOI DIGITADO NO TECLADO 
+                                        // E ARMAZENA EM UMA VARIVAL, NESSE CASO A VARIVAVEL nome
+                                        
+            Console.WriteLine("Digite sua idade.");
+                 idade = int.Parse(Console.ReadLine());
+
+
+            Console.WriteLine("Seu nome é " + nome + " e sua idade é " + idade);
+
+
+            Console.ReadKey();
+
+        }
+    }
+}
